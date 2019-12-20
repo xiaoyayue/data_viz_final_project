@@ -1,9 +1,8 @@
-# Is Environment a New Human Development Indicator Predicted by Economic Complexity?
-An introduction to Economic Complexity and Human Development Indicator
+# Is Environment a New Human Development Validated by Economic Complexity?
+# An Exploratory Study of Economic Complexity and Human Development Indicators
 
 ## Summary
-
- 
+This project aims to conduct an exploratory data visualization on the correlation betweewn Economic Complexity and Human Development Indicators. Based on the following data visualization, Economic Complexity has predictive power on country's policy orientation and decision-making in the field of human development, and serves as a powerful tool to validate the efficiency of policy changes based on comparative trends. In addition to traditional human development indicators - life expectancy, education, and income, it would be interesting to see whether the rising study of environment and energy can make itself a new human development indicator. The result shows that energy use and CO2 emission can be seen as a measure to represents achievements based on its correlation with Economic Complexity Index, but further study has to be done on the field of renewable energy to draw a more definitive conclusion. 
 
 ## Key Term Explaination
 
@@ -39,11 +38,11 @@ continent_avg dataset stores timeseries information on each continent's average 
 
 These two datasets are used to produce the tableau visualization to compare the difference between the average energy use and CO2 emissions per person to evaluate a country's energy use efficiency and possible renewable energy development (with the reference to the average ECI index). The two datasets are transposed before use so that year can be a column variable. The datasets are obtained from the gapminder database. 
 
-- global_power_plant_databased 
+- global_power_plant_database
 
 The global_power_plant_databased is used to produce the world map visualization of power plants number, location, and primary fuel type in each country. The dataset is obtained from the World Resource Institute. 
 
-## Technologies and Platforms Usage
+## Technologies and Platforms
 
 ### Plotly
 
@@ -56,8 +55,8 @@ Tableau is an American interactive visualization software company founded in Mou
 
 ## Stories 
 
-### The Predictive Power of Economic Complexity 
-Economic Complexity (EC) surpasses the predictive power of economic growth (EG), commonly considered as the unique way to achieve economic and human development. In the example below, life expectancy is picked as the representative human development indicator since it also reflects the magnitude of other human develoment indicators to some degrees: better educations and better income are key to remain a healthy lifestyle and afford proper care and treatment. The ggplot2 visualizations below substantiated the superiority of EC in evaluating country economic development and performance: the correlation between ECI and life expectancy and ECI is much more clear than that between EG and life expectancy. 
+### - The Predictive Power of Economic Complexity 
+Economic Complexity (EC) surpasses the predictive power of economic growth (EG), commonly considered as the unique way to achieve economic and human development. In the example below, life expectancy is picked as the representative human development indicator since it also reflects the magnitude of other human develoment indicators to some degrees: better educations and better income are key to remain a healthy lifestyle and afford proper care and treatment. The ggplot2 visualizations below substantiate the superiority of EC in evaluating country economic development and performance: the correlation between ECI and life expectancy and ECI is much more clear than that between EG and life expectancy. 
 
 ##### The Correlation Between Life Expectancy and ECI
 <img src="http://drive.google.com/uc?export=view&id=15LUcvEKubl8t2NzfIhqQyKOlL9h8HcW6" alt="Google Logo">
@@ -65,27 +64,28 @@ Economic Complexity (EC) surpasses the predictive power of economic growth (EG),
 ##### The Correlation Between Life Expectancy and Economic Growth
 <img src="http://drive.google.com/uc?export=view&id=1mxaiix_M1DWlP8KqVtE-h7tv3tirNf-R" alt="Google Logo">
 
-### The Influence on Policy Analysis and Priority
+### - Economic Complexity's Influence and Validation on Policy Analysis and Priority
 
-As indicated above, Human Develoment Index can direct government to prioritize key policies areas that 
-#### plotly 3d visualization
+As indicated above, Human Development Index can direct government to prioritize key policies areas in a broad policy area with a variety of measures such as education. By dragging the 3D graph below, we can see that lower secondary education completion ratio (ratio) is a much more important and relevant measure than primary education duration (duration). 
+
+#### Educations Parameters and ECI
 <iframe width="900" height="600" frameborder="0" scrolling="no" src="//plot.ly/~xiaoyayue/3.embed"></iframe>
 
-#### plotly timeseries visualization
+To investigate further the relationship between EC and secondary education completion ratio the across a time span, we validate their correlation by visualizing their similarities and difference. As seen in the timeseries visualization, we can see that for the variations in ECI corresponds to the variations in completion ratio, especially for the European continent where a majority of countries are highly developed countries and the line and scatters are highly overlapping. For other continents, we can still see that ECI is a pretty good indicator of the indicative trend of lower secondary education duration, despite the comparative magnitude gap between the two. 
+
+#### Completion Ratio and ECI Trend Comparison
 <iframe width="900" height="600" frameborder="0" scrolling="no" src="//plot.ly/~xiaoyayue/5.embed"></iframe>
 
-### ECI and The Environment
+### ECI and Environment
 
-Since the HDI also has limitations by only capturing part of what human development entails, it is worth thinking whether other parameters can come into the picture that are inclusive, informative, and indicative. As the issue of climate change has been drawing more attentions worldwide, it is time to unfold the impacts of environment and energy on both human development and economic development. Environment is a multifacet yet tricky factor: it entails promising industrial progress beneficial to product and economic intensity, renewable energy usage indicative to technological advancement, and CO2 emissions alarming to both human health and natural resources development. In the following visualization, we shall explore all questions in mind. 
-
-#### tableau emission and energy use workbook
+Since the HDI also has limitations by only capturing part of what human development entails, it is worth thinking whether other parameters can come into the picture that are inclusive, informative, and indicative of country development. As the issue of climate change has been drawing more attentions worldwide, it is time to unfold the impacts of environment and energy on development. Environment is a multi-facet yet tricky factor: it entails promising industrial progress beneficial to product and economic intensity, renewable energy usage indicative to technological advancement, and CO2 emissions alarming to both human health and natural resources development. In the following visualization, we shall explore all questions in mind. 
 
 <iframe seamless frameborder="0"
 src="https://public.tableau.com/views/energy_emission_eci_updated/Dashboard1?:embed=yes&:display_count=yes&:showVizHome=no" width = '1000' height = '700' scrolling='yes' ></iframe>
 
-This tableau visualization position side by side the difference between energy use and CO2 emission and the average ECI for each selected country. In the visualizaiton, we can see that it is generally intuitive that a higher CO2 emission and higher energy use indicates higher ECI. However, based on this visualization only, it is hard for us to understand why there are some countries who 
-
-#### tableau powerplant workbook 
+This tableau visualization position the difference between energy use and CO2 emission and the average ECI for each selected country side by side. We can see that it is generally intuitive that a higher average CO2 emission and energy use indicate a higher ECI. However, based on this visualization only, it is hard for us to understand the meanings of energy use divided by CO2 emission in percentage since there is no apparent pattern shown in the visualization. 
 
 <iframe seamless frameborder="0"
 src="https://public.tableau.com/views/World_Power_Plants_Overview_updated/Dashboard?:embed=yes&:display_count=yes&:showVizHome=no" width = '1000' height = '700' scrolling='yes' ></iframe>
+
+With the help of the power plant visualization ablove, however, we can find that countries or regions that have high percentage usually have more power plants whose primary fuel type are renewable energies. For example, these two indications co-occure in many Northern European countires, South American countries, and Southeastern countries. Although we cannot have any definitive conclusion, it directs policy makers to an areas worth studying in the future. 
