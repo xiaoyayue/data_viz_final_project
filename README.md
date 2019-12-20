@@ -15,6 +15,6 @@ src="https://public.tableau.com/views/World_Power_Plant_Overview/Dashboard?:embe
 #### tableau emission and energy use workbook
 
 <iframe seamless frameborder="0"
-src="https://public.tableau.com/views/energy_emission_eci/Dashboard1?:embed=yes&:display_count=yes&:showVizHome=no" width = '1000' height = '700' scrolling='yes' ></iframe>
+src="https://public.tableau.com/views/energy_emission_eci/Dashboard1?:embed=yes&:display_count=yes&:showVizHome=no" width = '1400' height = '700' scrolling='yes' ></iframe>
 
 ## https://public.tableau.com/views/energy_emission_eci/Dashboard1?:retry=yes&:display_count=y&:origin=viz_share_link
