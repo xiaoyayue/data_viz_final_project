@@ -1,0 +1,127 @@
+---
+title: "Final Project"
+author: "Lily Yue"
+date: "12/19/2019"
+output: html_document
+---
+
+Preparation:
+
+import packages
+```{r cars}
+library(ggplot2)
+library(plotly)
+library(tidyr)
+library(dplyr)
+```
+
+import data
+```{r}
+total5<-read.csv("total5.csv")
+df <- read.csv('total.csv')
+continent_avg<-read.csv('continent_avg.csv')
+```
+
+Plots:
+
+ECI on Life Expectancy
+```{r, message=FALSE, warning=FALSE}
+g <- ggplot(total5, aes( life_expect, ECI)) +
+  geom_point(shape=21, aes(fill=continent, size=pop)) + geom_smooth() +
+   scale_fill_manual(values = c('#F0F8FF',
+                             '#B0E0E6',
+                             '#5F9EA0',
+                             '#4682B4',
+                             '#8A2BE2')) +
+  xlab("Life Expectancy (years)") + 
+  ylab("ECI") +
+  theme(axis.text.x = element_text(size=12),
+        axis.text.y = element_text(size=12),axis.title=element_text(size=12), 
+        legend.text=element_text(size=12),
+        legend.title=element_text(size=12),
+        panel.background = element_blank())
+print(g)
+```
+
+GDP on Life Expectancy
+```{r, message=FALSE, warning=FALSE}
+g2 <- ggplot(total5, aes( life_expect, total5$growth)) +
+  geom_point(shape=21,aes(fill=continent, size=pop)) + geom_smooth() +
+  scale_fill_manual(values = c('#F0F8FF',
+                             '#B0E0E6',
+                             '#5F9EA0',
+                             '#4682B4',
+                             '#8A2BE2')) +
+  xlab("Life Expectancy (years)") + 
+  ylab("Economic Growth (%)") + 
+  theme(axis.text.x = element_text(size=15),
+        axis.text.y = element_text(size=15),axis.title=element_text(size=15), 
+        legend.text=element_text(size=15),
+        legend.title=element_text(size=15),
+        panel.background = element_blank())
+
+print(g2)
+```
+
+ECI on Education - use 3D graphs to compare different parameters
+```{r, message=FALSE, warning=FALSE}
+p1<-
+  plot_ly(df, x=~duration, y=~ratio, z=~ECI, text=~country, 
+        color=~ECI,
+        symbol=~continent, symbols=c('circle','diamond','square','cross'),
+        marker = list(size=5))
+p1
+```      
+
+Interactive timeseries graph with year slidebar
+
+```{r, message=FALSE, warning=FALSE}
+
+pal <- c('#D3D3D3',
+         '#B0E0E6',
+         '#5F9EA0',
+         '#4682B4')
+
+p<-
+  plot_ly(continent_avg, x = ~year, y = ~ratio, type = 'scatter',
+        color= ~continent, text=~continent, colors=pal) %>%
+  add_trace(y = ~ECI, mode='scatter', yaxis = "y2",
+            color=~continent, text=~continent, showlegend=F, colors=pal) %>%
+  layout(legend=list(x=1.1, y=0.8))%>%
+  layout(
+    title = "Completion Ratio (marker) and ECI (marker line) Trend Comparison",
+    xaxis = list(
+      rangeslider = list(type = "year")),
+    yaxis = list(title = "Ratio"),
+    yaxis2 = list(title = "ECI"))%>%
+  layout(yaxis2 = list(overlaying = "y", side = "right"))
+
+p
+```
+
+```{r}
+#install.packages("devtools")  # so we can install from github
+library("devtools")
+devtools::install_github("ropensci/plotly")
+library(plotly)
+library(htmlwidgets)
+```
+
+```{r}
+Sys.setenv("plotly_username"="xiaoyayue")
+Sys.setenv("plotly_api_key"="tMN3tHfWICb3zG7t7glV")
+```
+
+```{r}
+api_create(p1, filename = "3d_edu")
+```
+
+```{r}
+py <- plotly(username="xiaoyayue", key="tMN3tHfWICb3zG7t7glV") 
+py$ggplotly(g)  # send to plotly
+```
+
+```{r}
+install.packages("ggplotly")
+```
+
