@@ -1,4 +1,3 @@
-# Is Environment a New Human Development Indicator Validated by Economic Complexity?
 # An Exploratory Study of Economic Complexity and Human Development Indicators
 
 ## Summary
