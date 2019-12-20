@@ -1,13 +1,26 @@
 # Is Environment a New Human Development Indicator?
 An introduction to Economic Complexity and Human Development Indicator
 
-## Executive summary
+## Summary
 
-A link to your visualization
+ 
+
+## Key Term Explaination
+
+### Economic Complexity Index
+
+The Economic Complexity Index (ECI) is a measure of the relative knowledge intensity of an economy. ECI measures the knowledge intensity of an economy by considering the knowledge intensity of the products it exports. ECI has been validated as a relevant economic measure by showing its ability to predict future economic growth and explain international variations in income inequality. Economic Complexity (EC) surpasses the predictive power of economic growth (EG), commonly considered as the unique way to achieve economic and human development. 
+(Source: The Observatory of Economic Complexity)
+
+### Human Development Indicators
+
+Human Development Indicators represents achievements in key dimensions in one's life: live a long and healthy life (life expectancy), be knowledgeable (education), and have a decent standard of living(income per capita). It was created to emphasize that people and their capabilities should be the ultimate criteria for assessing the development of a country, not economic growth alone. The corresponding Human Development Index (HDI) is a summary measure of average achievement. It can also be used to evaluate national policy choices and set policy priorities: how two countries with the same level of income per capita can end up with different human development outcomes. The HDI also has limitations by simplifying and capturing only part of what human development entails but not revealing other criterais such as human security. 
+(Source: UNITED NATIONS DEVELOPMENT PROGRAMME)
 
 ## Data Sources Description
 
-In this visualization project, 4 datasets are used to create ggplot2, plotly, and tableau visualizations
+In this visualization project, 4 datasets are used to create ggplot2, plotly, and tableau visualizations.
+
 1. total.csv (represented by object name df in rmarkdown to produce plotly visualizations)
 
 The total datasets stores information on country's ECI and humand development indicators related variables in 2007. Main variables includeds are country name, continent, GDP per capita, ECI, population, life expectancy, lower secondary education completion ratio, primary education duration. The datasets is the results of merging multiple gapminder datasets in RStudio by combining country names and specificy year 2007. 
@@ -30,7 +43,14 @@ The global_power_plant_databased is used to produce the world map visualization 
 
 ## Technologies and Platforms Usage
 
-List/description of the significant technologies/platforms used
+### Plotly
+
+Plotly is a technical computing company located in Montreal, Quebec that develops and maintains multiple open-source online data analytics and tutorial tools. Plotly develops easily customizable and declarative packages that seperate execution and specification and thus allow users to focus on more important relationships within the data. Plotly’s high customizability and dynamicity render it a popular web-based data visualization tool and a R-based data visualization package, though it has comparatively fewer features than Tableau. The following visualizations are produced with plotly package in RStudio and modified by ChartStudio, plotly's online tool for for creating, styling, and publishing interactive web-based charts
+(Source: Plotly Official Website)
+
+### Tableau
+Tableau is an American interactive visualization software company founded in Mountain View, California. It develops and maintans online graph-based data visualizations supported by by relational database, online analytical processing cubes, cloud databased, and spreadsheets. Tableau is especially known for its mapping functionalities that automatically connect to inbuilt sptial files and generate maps based on recognized latitudes and longitudes coordinates. 
+(Source: Tableau Official Website and Wikipedia Page)
 
 ## Stories 
 Key highlights/stories your visualization can be used to highlight (talking points)
