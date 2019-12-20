@@ -2,8 +2,7 @@
 Fata Visualization Final Project
 
 #### ggplot eci
-<img src="http://drive.google.com/uc?export=view&id=11ERiV75SPHl4-ctK_s8vGnXzkZCmr8Ci" alt="Google Logo">
-
+<img src="http://drive.google.com/uc?export=view&id=1y6UNRpptZ4RPwb4omHugnkuUglJ_YZHN" alt="Google Logo">
 
 #### plotly 3d visualization
 <iframe width="600" height="400" frameborder="0" scrolling="no" src="//plot.ly/~xiaoyayue/3.embed"></iframe>
