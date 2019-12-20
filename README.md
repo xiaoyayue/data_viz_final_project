@@ -2,11 +2,10 @@
 Fata Visualization Final Project
 
 #### ggplot eci
-<img src="http://drive.google.com/uc?export=view&id=1SAmj3sL9Y9b1M_z9dUnRn3Zcimw_cw1j" alt="Google Logo">
+<img src="http://drive.google.com/uc?export=view&id=15LUcvEKubl8t2NzfIhqQyKOlL9h8HcW6" alt="Google Logo">
 
 ### gdp
-
-<img src="http://drive.google.com/uc?export=view&id=1okQ4MvRwUrialMNLNyPU9cDCR_u6J4Dp" alt="Google Logo">
+<img src="http://drive.google.com/uc?export=view&id=1mxaiix_M1DWlP8KqVtE-h7tv3tirNf-R" alt="Google Logo">
 
 #### plotly 3d visualization
 <iframe width="900" height="600" frameborder="0" scrolling="no" src="//plot.ly/~xiaoyayue/3.embed"></iframe>
