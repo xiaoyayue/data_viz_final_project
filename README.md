@@ -6,7 +6,7 @@ Fata Visualization Final Project
 
 ### gdp
 
-<img src="http://drive.google.com/uc?export=view&id=1A-XKlkMlTdzBs4l95LCGFYrE6XItVWyb" alt="Google Logo">
+<img src="http://drive.google.com/uc?export=view&id=1okQ4MvRwUrialMNLNyPU9cDCR_u6J4Dp" alt="Google Logo">
 
 #### plotly 3d visualization
 <iframe width="900" height="600" frameborder="0" scrolling="no" src="//plot.ly/~xiaoyayue/3.embed"></iframe>
