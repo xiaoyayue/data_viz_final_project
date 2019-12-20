@@ -5,10 +5,10 @@ Fata Visualization Final Project
 <img src="http://drive.google.com/uc?export=view&id=1A-XKlkMlTdzBs4l95LCGFYrE6XItVWyb" alt="Google Logo">
 
 #### plotly 3d visualization
-<iframe width="900" height="700" frameborder="0" scrolling="no" src="//plot.ly/~xiaoyayue/3.embed"></iframe>
+<iframe width="900" height="600" frameborder="0" scrolling="no" src="//plot.ly/~xiaoyayue/3.embed"></iframe>
 
 #### plotly timeseries visualization
-<iframe width="900" height="700" frameborder="0" scrolling="no" src="//plot.ly/~xiaoyayue/5.embed"></iframe>
+<iframe width="900" height="600" frameborder="0" scrolling="no" src="//plot.ly/~xiaoyayue/5.embed"></iframe>
 
 #### tableau powerplant workbook 
 
