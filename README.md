@@ -2,6 +2,10 @@
 Fata Visualization Final Project
 
 #### ggplot eci
+<img src="http://drive.google.com/uc?export=view&id=1SAmj3sL9Y9b1M_z9dUnRn3Zcimw_cw1j" alt="Google Logo">
+
+### gdp
+
 <img src="http://drive.google.com/uc?export=view&id=1A-XKlkMlTdzBs4l95LCGFYrE6XItVWyb" alt="Google Logo">
 
 #### plotly 3d visualization
