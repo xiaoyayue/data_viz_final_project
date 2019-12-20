@@ -10,9 +10,10 @@ Fata Visualization Final Project
 #### tableau powerplant workbook 
 
 <iframe seamless frameborder="0"
-src="https://public.tableau.com/views/World_Power_Plant_Overview/Dashboard?:embed=yes&:display_count=yes&:showVizHome=no" width = '1000' height = '700' scrolling='yes' ></iframe>
+src="https://public.tableau.com/views/World_Power_Plant_Overview_updated/Dashboard?:embed=yes&:display_count=yes&:showVizHome=no" width = '1000' height = '700' scrolling='yes' ></iframe>
 
 #### tableau emission and energy use workbook
 
 <iframe seamless frameborder="0"
 src="https://public.tableau.com//energy_emission_eci_updated/Dashboard1?:embed=yes&:display_count=yes&:showVizHome=no" width = '1000' height = '700' scrolling='yes' ></iframe>
+
